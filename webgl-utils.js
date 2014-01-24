@@ -68,7 +68,7 @@
 
     function mvPushMatrix() {
         var copy = mat4.create();
-        mat4.set(mvMatrix, copy);
+        mat4.clone(mvMatrix, copy);
         mvMatrixStack.push(copy);
     }
 
